@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一文章, woodBlog">
-    <meta name="description" content="">
+    <meta name="keywords" content="网络相关基础知识复盘, woodBlog">
+    <meta name="description" content="为了自己的知识点更巩固，做一次复盘。
+最基础提到网络很多人会脱口而出TCP、UDP、HTTP等常见的网络协议。但是我觉得还是需要了解一下承载这些协议的载体，也就是OSI的七层模型：1.物理层：2.数据链路层：3.网络层：4.传输层：5.会话">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第一文章 | woodBlog</title>
+    <title>网络相关基础知识复盘 | woodBlog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +335,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一文章</h1>
+                    <h1 class="description center-align post-title">网络相关基础知识复盘</h1>
                 </div>
             </div>
         </div>
@@ -375,7 +376,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-11
+                    2022-11-23
                 </div>
                 
 
@@ -396,7 +397,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>为了自己的知识点更巩固，做一次复盘。</p>
+<h1 id="最基础"><a href="#最基础" class="headerlink" title="最基础"></a>最基础</h1><p>提到网络很多人会脱口而出TCP、UDP、HTTP等常见的网络协议。但是我觉得还是需要了解一下承载这些协议的载体，也就是OSI的七层模型：<br>1.物理层：<br>2.数据链路层：<br>3.网络层：<br>4.传输层：<br>5.会话层：<br>6.表示层：<br>7.应用层：</p>
+<h1 id="最理解"><a href="#最理解" class="headerlink" title="最理解"></a>最理解</h1><h2 id="TCP-x2F-UDP"><a href="#TCP-x2F-UDP" class="headerlink" title="TCP&#x2F;UDP"></a>TCP&#x2F;UDP</h2><h3 id="TCP为什么需要三次握手？"><a href="#TCP为什么需要三次握手？" class="headerlink" title="TCP为什么需要三次握手？"></a>TCP为什么需要三次握手？</h3><p>第一次握手，客户端向服务端发送SYN报文+客户端生成的随机序列号，发送完毕后客户端处于receive 状态。<br>第二次握手，服务端接收到客户端传来的SYN报文与序列号后，会将服务端生成的随机序列号与SYN报文以及ACK报文+客户端返回的序列号+1一起返回客户端。（随机生成的序列号方便客户端与服务端进行标识）<br>第三次，客户端收到服务端的数据确认无误后，可以确定自己的发送能力与接收能力无误，但是服务不知道客户端的接收是否正常，所以客户端还需要再发一次ACK报文让服务端确定自己的接收能力正常。服务端收到报文后，确认无误，开始进行通信。</p>
+
                 
             </div>
             <hr/>
@@ -422,7 +426,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/10/11/%E7%AC%AC%E4%B8%80%E6%96%87%E7%AB%A0/">http://example.com/2022/10/11/%E7%AC%AC%E4%B8%80%E6%96%87%E7%AB%A0/</a>
+                    <a href="http://example.com/2022/11/23/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%8D%E7%9B%98/">http://example.com/2022/11/23/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%8D%E7%9B%98/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -536,9 +540,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/11/23/%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%8D%E7%9B%98/">
                     <div class="card-image">
@@ -556,9 +561,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -567,6 +572,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -574,7 +580,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/10/11/%E7%AC%AC%E4%B8%80%E6%96%87%E7%AB%A0/">
@@ -604,7 +610,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
